@@ -11,6 +11,24 @@ This schedule is **intensive**, covering key concepts with **zero fluff**. You�
 
 ---
 
+
+## 📑 Table of Contents
+- [📍 Day 1: Essential Fundamentals & STL Mastery](#-day-1-essential-fundamentals--stl-mastery)
+- [📍 Day 2: Mastering Arrays, Strings & Two Pointers](#-day-2-mastering-arrays-strings--two-pointers)
+- [📍 Day 3: Mastering Recursion & Backtracking](#-day-3-mastering-recursion--backtracking)
+- [📍 Day 4: Mastering Graphs & Trees (DSA Heavyweight Topics)](#-day-4-mastering-graphs--trees-dsa-heavyweight-topics)
+- [📍 Day 5: Mastering Dynamic Programming (DP)](#-day-5-mastering-dynamic-programming-dp)
+- [📍 Day 6: Mastering Advanced Topics](#-day-6-mastering-advanced-topics)
+- [📍 Day 7: Practice, Revision & Speed Optimization](#-day-7-practice-revision--speed-optimization)
+- [🎯 Final Notes](#-final-notes)
+- [What is STL?](#what-is-stl)
+  - [📌 Components of STL](#components-of-stl)
+  - [📍 1. Algorithms in STL](#-1-algorithms-in-stl)
+  - [📍 2. Containers (Data Structures in STL)](#-2-containers-data-structures-in-stl)
+  - [📍 3. Iterators (Access Elements Efficiently)](#-3-iterators-access-elements-efficiently)
+
+---
+
 ### **📍 Day 1: Essential Fundamentals & STL Mastery**  
 > **Goal:** Master basic data structures, STL, and time complexity.  
 ⏳ **Time Allocation:** ~8-10 hours  
