@@ -6,7 +6,7 @@ This schedule is **intensive**, covering key concepts with **zero fluff**. You�
 
 ---
 
-## **🗓️ 1-Week CP/DSA Mastery Plan**  
+### **🗓️ 1-Week CP/DSA Mastery Plan**  
 **Goal:** After completing this, you should be able to solve **most** LeetCode problems **independently** and perform well in **competitive programming (CP)** contests.
 
 ---
@@ -182,3 +182,186 @@ This schedule is **intensive**, covering key concepts with **zero fluff**. You�
 - **Focus on problem-solving speed & pattern recognition.**
 
 🔥 **Now, GO CRUSH IT.** 🚀
+
+
+
+### What is STL?
+
+**STL (Standard Template Library)** is a powerful library in C++ that provides pre-built data structures and algorithms, making coding **faster, more efficient, and less error-prone** in competitive programming (CP) and DSA.
+
+---
+
+## **📌 Components of STL**
+STL is divided into **four** main parts:  
+
+1. **Algorithms** → Sorting, Searching, Binary Search, etc.  
+2. **Containers** → Data structures like vectors, sets, maps, queues, etc.  
+3. **Iterators** → Used to traverse through containers.  
+4. **Functions** → Comparators, function objects (functors).  
+
+---
+
+## **📍 1. Algorithms in STL**
+STL provides **predefined functions** for commonly used algorithms.  
+
+✅ **Sorting**  
+```cpp
+sort(arr, arr + n);  // Sorts an array in O(N log N)
+sort(v.begin(), v.end());  // Sorts a vector
+```
+
+✅ **Searching**  
+```cpp
+binary_search(v.begin(), v.end(), x);  // Returns true if x exists
+auto it = find(v.begin(), v.end(), x); // Returns iterator to x
+```
+
+✅ **Min/Max & Swapping**  
+```cpp
+min(a, b);  
+max(a, b);
+swap(a, b);
+```
+
+✅ **Reversing & Permutations**  
+```cpp
+reverse(v.begin(), v.end());  
+next_permutation(v.begin(), v.end());  
+```
+
+---
+
+## **📍 2. Containers (Data Structures in STL)**
+Containers are pre-built data structures in STL.
+
+### **📌 Sequence Containers (Linear DS)**
+🔹 **Vector** (Dynamic array)  
+```cpp
+vector<int> v = {1, 2, 3};
+v.push_back(4);  // Add element
+v.pop_back();    // Remove last element
+```
+
+🔹 **Deque** (Double-ended queue)  
+```cpp
+deque<int> dq;
+dq.push_front(1);
+dq.push_back(2);
+dq.pop_front();
+dq.pop_back();
+```
+
+🔹 **List (Doubly Linked List)**  
+```cpp
+list<int> l;
+l.push_front(1);
+l.push_back(2);
+l.pop_front();
+```
+
+---
+
+### **📌 Associative Containers (Non-Linear DS)**
+🔹 **Set** (Stores unique elements in sorted order)  
+```cpp
+set<int> s;
+s.insert(3);
+s.insert(1);
+s.insert(2);  // {1,2,3} automatically sorted
+```
+
+🔹 **Unordered Set** (Stores unique elements in **random order**)  
+```cpp
+unordered_set<int> us = {5, 2, 8};
+```
+
+🔹 **Map** (Stores key-value pairs in sorted order)  
+```cpp
+map<int, string> m;
+m[1] = "Hello";
+m[2] = "World";
+```
+
+🔹 **Unordered Map** (Key-value pairs in **random order**)  
+```cpp
+unordered_map<int, string> um;
+```
+
+🔹 **Multiset & Multimap** (Allow duplicate elements)  
+```cpp
+multiset<int> ms = {1, 1, 2, 2, 3};  // Sorted duplicates
+```
+
+---
+
+### **📌 Container Adapters (Specialized Data Structures)**
+🔹 **Stack** (LIFO - Last In First Out)  
+```cpp
+stack<int> s;
+s.push(1);
+s.push(2);
+s.pop();
+```
+
+🔹 **Queue** (FIFO - First In First Out)  
+```cpp
+queue<int> q;
+q.push(1);
+q.push(2);
+q.pop();
+```
+
+🔹 **Priority Queue (Max Heap by default)**  
+```cpp
+priority_queue<int> pq;  // Max Heap
+pq.push(5);
+pq.push(1);
+pq.push(10);  // Top is 10
+```
+
+🔹 **Min Heap (Using priority_queue)**  
+```cpp
+priority_queue<int, vector<int>, greater<int>> minHeap;
+```
+
+---
+
+## **📍 3. Iterators (Access Elements Efficiently)**
+Iterators are like pointers that allow easy traversal through containers.
+
+```cpp
+vector<int> v = {1, 2, 3, 4};
+vector<int>::iterator it = v.begin();
+cout << *it;  // Prints first element
+```
+
+Shorter version using **auto**:  
+```cpp
+for (auto it = v.begin(); it != v.end(); it++)
+    cout << *it << " ";
+```
+
+---
+
+## **📍 4. Functions & Functors**
+🔹 **Lambda Functions in STL**  
+```cpp
+sort(v.begin(), v.end(), [](int a, int b) { return a > b; });
+```
+
+🔹 **Comparators for Custom Sorting**  
+```cpp
+bool cmp(int a, int b) {
+    return a > b; // Sort in descending order
+}
+sort(v.begin(), v.end(), cmp);
+```
+
+---
+
+## **🔥 Why is STL Important in CP/DSA?**
+- Saves time ⏳ (pre-built implementations)
+- Optimized 🚀 (uses efficient algorithms internally)
+- **Competitive Edge in CP** 💪
+
+🔥 **Mastering STL will make you 2x faster in CP & LeetCode.**
